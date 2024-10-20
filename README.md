@@ -37,11 +37,11 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 ### Requirements
 
-- Numpy   (latest tested v1.23.5)
+- Numpy   
 
-- Python  (latest tested v3.8.16)
+- Python  
 
-- PyTorch (latest tested v1.13.0)
+- PyTorch 
 
 ### Installations
 
@@ -170,6 +170,6 @@ python val_sample_to_npy.py ./configs/sampling.yaml
 
 ## 4. Contributing
 
-We welcome any contributions to our project! Please submit a pull request or open an issue.
+Welcome any contributions to our project! Please submit a pull request or open an issue.
 
 ---
