@@ -141,7 +141,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 - If you want to convert ImageNet validation data to npy format, please run the following script. 
 
-- Alternatively, you can the sample data in the `assets/tutorial_samples/`.
+- Alternatively, you can use the sample data in the `assets/tutorial_samples/`.
 
 ```bash
 python val_sample_to_npy.py ./configs/sampling.yaml
