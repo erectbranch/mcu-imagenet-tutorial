@@ -1,0 +1,10 @@
+valid_set:
+  path: ~/dataset/imagenet/val/
+  image_size: 224
+  batch_size: 1
+
+sampling:
+  random_seed: 42
+  subset_size: 50
+  num_subset: 1 
+  save_path: ~/tutorial/assets/tutorial_samples/    # ~/tutorial/npy_samples/

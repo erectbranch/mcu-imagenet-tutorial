@@ -1,0 +1,9 @@
+stedgeai:
+  path: ~/STM32CubeIDE/Repository/Packs/STMicroelectronics/X-CUBE-AI/9.0.0/Utilities/macarm/stedgeai
+  temp: ~/tutorial/.workspace
+  serial_port: serial:/dev/tty.usbmodem12403:115200
+  report_path: ~/tutorial/inference_outputs
+
+target:
+  mcu: stm32h7
+  model: ~/tutorial/assets/mcunet-512kb-2mb_imagenet.tflite
