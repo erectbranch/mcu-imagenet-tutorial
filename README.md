@@ -1,6 +1,6 @@
 # ImageNet Validation with Microcontroller Tutorial
 
-This repository is a tutorial of inferencing ImageNet validation dataset with an STmicroelectronics Microcontroller(MCU) using X-CUBE-AI.
+This repository is a tutorial of inferencing ImageNet validation dataset with a STmicroelectronics Microcontroller(MCU) using X-CUBE-AI.
 
 <img src="./assets/figures/main.png" alt="main" width="75%"/>
 
@@ -53,9 +53,9 @@ This repository is a tutorial of inferencing ImageNet validation dataset with an
 
 ### Model and Data Preparation
 
-- Model file (`.tflite`)
+- Model file (`assets/mcunet-512kb-2mb_imagenet.tflite`) [[Link](https://hanlab18.mit.edu/projects/tinyml/mcunet/release/mcunet-512kb-2mb_imagenet.tflite)]
 
-  (We will use the `mcunet-512kb-2mb_imagenet.tflite` model for this tutorial. [[GitHub](https://github.com/mit-han-lab/mcunet/tree/master)], [[Link](https://hanlab18.mit.edu/projects/tinyml/mcunet/release/mcunet-512kb-2mb_imagenet.tflite)])
+  (We will use the 'MCUNet: Tiny Deep Learning on IoT Devices' model for this tutorial: [[GitHub](https://github.com/mit-han-lab/mcunet/tree/master)])
 
 - ImageNet validation dataset  [[Link](https://www.image-net.org/)]
 
@@ -65,7 +65,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with an
 
 ## 3. Step-by-Step Tutorial
 
-> Information: You can refer to the STM32 official tutorial **"how to automatize code generation and validation with X-CUBE-AI CLI"** [[Link](https://wiki.stmicroelectronics.cn/stm32mcu/wiki/AI:How_to_automatize_code_generation_and_validation_with_X-CUBE-AI_CLI)]
+> Information: You can refer to the STM32 official tutorial **"How to automatize code generation and validation with X-CUBE-AI CLI"** [[Link](https://wiki.stmicroelectronics.cn/stm32mcu/wiki/AI:How_to_automatize_code_generation_and_validation_with_X-CUBE-AI_CLI)]
 
 ### STEP 1. Create the STM32CubeIDE project.
 
@@ -87,14 +87,14 @@ This repository is a tutorial of inferencing ImageNet validation dataset with an
 
     <img src="./assets/figures/1_create_project_3.png" alt="select_sw_pack" width="50%"/>
 
-4. System will ask to fix clock and peripheral configuration. Click [Yes] to automatically fix setting.
+4. System will ask to fix the clock and peripheral configuration. Click [Yes] to automatically fix the setting.
 
     <img src="./assets/figures/1_create_project_4.png" alt="fix_peripherals" width="50%"/>
 
 
 ### STEP 2. Setup the X-CUBE-AI configuration and analyze the model.
 
-1. Setup the X-CUBE-AI configuration. 
+1. Set up the X-CUBE-AI configuration. 
 
     - [Categories] - [Middleware and Software Packs] - [X-CUBE-AI] - [Add network]
 
@@ -104,11 +104,11 @@ This repository is a tutorial of inferencing ImageNet validation dataset with an
 
     - Set 'Report's output directory' to `{tutorial_path}/inference_output/`
 
-    - Check 'Force classifier validation output (--classifier)' option
+    - Check the 'Force classifier validation output (--classifier)' option
 
     <img src="./assets/figures/2_setup_engine_and_model_2.png" alt="select_tflite_model" width="50%"/> <img src="./assets/figures/2_setup_engine_and_model_3.png" alt="advanced_setting" width="40%"/>
 
-3. If system do not analyze autimatically, start [Analyze] to check the model complexity. 
+3. If system does not analyze automatically, start [Analyze] to check the model complexity. 
 
     <img src="./assets/figures/2_setup_engine_and_model_4.png" alt="analyze" width="50%"/>
 
@@ -148,7 +148,7 @@ python val_sample_to_npy.py ./configs/sampling.yaml
 
 ### STEP 5. Evaluate the TFLite model on ImageNet validation dataset. 
 
-1. Select ImageNet Validation inputs, outputs (`.npy`) on X-CUBE-AI configuration.
+1. Select ImageNet Validation inputs, and outputs (`.npy`) on X-CUBE-AI configuration.
 
     <img src="./assets/figures/5_valid_on_target_1.png" alt="select_sample" width="50%"/>
 
@@ -170,6 +170,6 @@ python val_sample_to_npy.py ./configs/sampling.yaml
 
 ## 4. Contributing
 
-We welcome any contributions to our project! Please summit a pull request or open an issue.
+We welcome any contributions to our project! Please submit a pull request or open an issue.
 
 ---
