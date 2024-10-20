@@ -23,7 +23,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 │   ├── configs.py               # configuration parser for the tutorial.
 │   ├── dataset.py               # ImageNet dataset loader 
 │   └── sampler.py               # ImageNet dataset sampler 
-├── npy_samples                  # validation data samples in npy format.
+├── npy_samples                  # validation data subsets in npy format.
 ├── workspace                    # STM32CubeIDE project codes (will be updated)
 ├── val_sample_to_npy.py         # python script to convert ImageNet validation data to npy format.
 └── validate_on_target.ipynb     # CLI script to validate the TFLite model on the STM32 target MCU.
@@ -59,7 +59,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 - ImageNet validation dataset  [[Link](https://www.image-net.org/)]
 
-  (If don't want to download the dataset, you can use sample ImageNet dataset in the `assets/imagenet_npy_samples/`)
+  (If don't want to download the dataset, you can use sample ImageNet dataset in the `assets/tutorial_samples/`)
 
 ---
 
@@ -139,7 +139,9 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 ### STEP 4. (Optional) Convert ImageNet validation data to npy format.
 
-If you want to convert ImageNet validation data to npy format, please run the following script.
+- If you want to convert ImageNet validation data to npy format, please run the following script. 
+
+- Alternatively, you can the sample data in the `assets/tutorial_samples/`.
 
 ```bash
 python val_sample_to_npy.py ./configs/sampling.yaml
