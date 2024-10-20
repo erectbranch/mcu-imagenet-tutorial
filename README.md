@@ -12,20 +12,20 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 ├── assets                       # MCU target model, tutorial figures folder.
 │   ├── tutorial_samples         # our sample ImageNet validation data in npy format.
 │   └── mcunet_...tflite         # target model file. (not included)
-├── configs                      # User configurations for the tutorial.                           
+├── configs                      # user configurations for the tutorial.                           
 │   ├── cli_command.yaml         # CLI command configurations for the validation on the STM32 target MCU.
-│   └── sampling.yaml            # Sampling configurations for the ImageNet validation data to npy format.
+│   └── sampling.yaml            # sampling configurations for the ImageNet validation data to npy format.
 ├── inference_outputs            # MCU inference outputs folder.                              
 │   ├── 1 
 │   ├── 2
 │   └── ...
-├── utils                        # Utility scripts for the tutorial.
-│   ├── configs.py               # Configuration parser for the tutorial.
+├── utils                        # utility scripts for the tutorial.
+│   ├── configs.py               # configuration parser for the tutorial.
 │   ├── dataset.py               # ImageNet dataset loader 
 │   └── sampler.py               # ImageNet dataset sampler 
 ├── npy_samples                  # validation data samples in npy format.
 ├── workspace                    # STM32CubeIDE project codes (will be updated)
-├── val_sample_to_npy.py         # Python script to convert ImageNet validation data to npy format.
+├── val_sample_to_npy.py         # python script to convert ImageNet validation data to npy format.
 └── validate_on_target.ipynb     # CLI script to validate the TFLite model on the STM32 target MCU.
 ```
 
@@ -33,7 +33,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 ## 2. Prerequisites
 
-> Information: Only tested the tutorial with STM32H7B3I-DK MCU board.
+> Information: only tested with STM32H7B3I-DK MCU board.
 
 ### Requirements
 
@@ -55,7 +55,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 - Model file (`assets/mcunet-512kb-2mb_imagenet.tflite`) [[Link](https://hanlab18.mit.edu/projects/tinyml/mcunet/release/mcunet-512kb-2mb_imagenet.tflite)]
 
-  (We will use the 'MCUNet: Tiny Deep Learning on IoT Devices' model for this tutorial: [[GitHub](https://github.com/mit-han-lab/mcunet/tree/master)])
+  (This tutorial will use the 'MCUNet: Tiny Deep Learning on IoT Devices' model: [[GitHub](https://github.com/mit-han-lab/mcunet/tree/master)])
 
 - ImageNet validation dataset  [[Link](https://www.image-net.org/)]
 
@@ -65,7 +65,7 @@ This repository is a tutorial of inferencing ImageNet validation dataset with a 
 
 ## 3. Step-by-Step Tutorial
 
-> Information: You can refer to the STM32 official tutorial **"How to automatize code generation and validation with X-CUBE-AI CLI"** [[Link](https://wiki.stmicroelectronics.cn/stm32mcu/wiki/AI:How_to_automatize_code_generation_and_validation_with_X-CUBE-AI_CLI)]
+> Information: you can refer to the STM32 official tutorial **"How to automatize code generation and validation with X-CUBE-AI CLI"** [[Link](https://wiki.stmicroelectronics.cn/stm32mcu/wiki/AI:How_to_automatize_code_generation_and_validation_with_X-CUBE-AI_CLI)]
 
 ### STEP 1. Create the STM32CubeIDE project.
 
