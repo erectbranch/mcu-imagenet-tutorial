@@ -2,7 +2,7 @@
 
 This repository is a tutorial of inferencing ImageNet validation dataset with a STmicroelectronics Microcontroller(MCU) using X-CUBE-AI.
 
-<img src="./assets/figures/main.png" alt="main" width="75%"/>
+<img src="./assets/figures/main.png" alt="main" width="100%"/>
 
 ---
 
